@@ -78,7 +78,7 @@ model.add(Flatten())#transforming the pool into a single column
 model.add(Dense(2*2*64, activation='relu'))
 model.add(Dropout(0.2))
 model.add(Dense(2*64, activation='relu'))
-model.add(Dropout(0.2))
+model.add(Dropout(0.3))
 
 model.add(Dense(num_labels, activation='softmax'))
 #model.summary()
